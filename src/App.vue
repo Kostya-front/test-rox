@@ -1,8 +1,4 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
@@ -28,3 +24,10 @@ nav {
   }
 }
 </style>
+
+<script setup lang="ts">
+
+import {useCounterStore} from "@/store/counter";
+
+const store = useCounterStore()
+</script>
